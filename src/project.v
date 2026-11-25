@@ -18,11 +18,11 @@ module tt_um_UCL (
 
   // All output pins must be assigned. If not used, assign to 0.
     traffic_light lights(
-        .clk (clk)
-        .reset_n (rst_n)
-        .red (uo_out[0])
+        .clk (clk),
+        .reset_n (rst_n),
+        .red (uo_out[0]),
         .amber   (uo_out[1]),
-        .green   (uo_out[2])
+        .green   (uo_out[2]),
     );
     assign uo_out[7:3] = 5'b0;
     assign uio_out = 8'b0;
